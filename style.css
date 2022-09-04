@@ -37,9 +37,10 @@ body {
 }
 
 .right {
-  background-color: grey;
+  background-color: #757575;
   padding: 50px;
   width: 50%;
+  text-align: center;
 }
 
 
