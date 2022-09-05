@@ -1,3 +1,5 @@
+/* TODO: 1. part 1: two parts of the hero section do not scale well - when enlarging the window after a certain point, it stops to fill up the entire screen */
+
 * {
   box-sizing: border-box;
 }
@@ -34,6 +36,7 @@ body {
 
 .left {
   width: 50%;
+  min-width: 300px;
 }
 
 .right {
