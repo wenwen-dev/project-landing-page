@@ -8,6 +8,7 @@ body {
   display: flex;
   height: 100vh;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-and-hero {
@@ -92,7 +93,7 @@ button {
 .info {
   display: flex;
   flex-direction: column;
-  padding: 20px 180px;
+  padding: 20px 200px;
 }
 
 .info h2 {
@@ -105,8 +106,7 @@ button {
 
 .cards {
   display: flex;
-  justify-content: center;
-  gap: 33px;
+  justify-content: space-between;
 }
 
 .card {
@@ -125,4 +125,23 @@ button {
   height: 160px;
   border: solid 3px #3882F6;
   border-radius: 12px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 200px;
+  background-color: #E5E7EB;
+}
+
+.testimonial-quote {
+  font-size:36px;
+  /* font-style: italic; */
+  color: #1F2937;
+  font-weight: 100;
+}
+
+.testimonial-person {
+  align-self: flex-end;
+  font-weight: 700;
 }
