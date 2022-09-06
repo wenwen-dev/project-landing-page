@@ -1,4 +1,5 @@
 /* TODO: 1. part 1: two parts of the hero section do not scale well - when enlarging the window after a certain point, it stops to fill up the entire screen */
+/* TODO: part 3 testimonial: why doesn;t font-weight work? */
 
 * {
   box-sizing: border-box;
@@ -8,7 +9,7 @@ body {
   display: flex;
   height: 100vh;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Tahoma, sans-serif;
 }
 
 .header-and-hero {
@@ -36,12 +37,12 @@ body {
   justify-content: space-between;
 }
 
-.left {
+.header-and-hero .left {
   width: 50%;
   min-width: 300px;
 }
 
-.right {
+.header-and-hero .right {
   background-color: #757575;
   padding: 50px;
   width: 50%;
@@ -60,16 +61,6 @@ body {
   font-size: 18px;
   color: #E5E7EB;
   margin: 0;
-}
-
-
-
-.call-to-action {
-  background-color: #3882F6;
-}
-
-.footer {
-  background-color: #1F2937;
 }
 
 ul {
@@ -135,13 +126,54 @@ button {
 }
 
 .testimonial-quote {
-  font-size:36px;
-  /* font-style: italic; */
+  font-size: 36px;
+  font-style: italic;
   color: #1F2937;
   font-weight: 100;
 }
 
 .testimonial-person {
-  align-self: flex-end;
   font-weight: 700;
+  font-size: 20px;
+  margin-right: 60px;
+  margin-left: auto;
+}
+
+.call-to-action {
+  background-color: #3882F6;
+  margin: 120px;
+  padding: 30px 100px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: large;
+  
+}
+
+.call-to-action button {
+  border: white 2px solid;
+  font-size: medium;
+}
+
+.call-to-action .left {
+  align-items: center;
+  gap: 10px;
+}
+
+.left .title {
+  font-weight: 700;
+  font-size: large;
+  margin: 0;
+}
+
+.left .text {
+  font-weight:lighter;
+  margin: 0;
+}
+
+
+.footer {
+  background-color: #1F2937;
 }
