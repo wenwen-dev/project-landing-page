@@ -1,6 +1,3 @@
-/* TODO: 1. part 1: two parts of the hero section do not scale well - when enlarging the window after a certain point, it stops to fill up the entire screen */
-/* TODO: part 3 testimonial: why doesn;t font-weight work? */
-
 * {
   box-sizing: border-box;
 }
@@ -12,11 +9,11 @@ body {
   font-family: Roboto, Tahoma, sans-serif;
 }
 
-.header-and-hero {
+.header-and-hero { 
   background-color: #1F2937;
   display: flex;
   flex-direction: column;
-  padding: 20px 60px;
+  padding: 20px 160px 110px;
 }
 
 .header {
@@ -24,6 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 .header-logo {
@@ -35,18 +33,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .header-and-hero .left {
   width: 50%;
   min-width: 300px;
+  margin: 0;
+  padding: 0;
 }
 
 .header-and-hero .right {
-  background-color: #757575;
-  padding: 50px;
+  background-color: #6D747D;
+  padding: 95px 88px;
   width: 50%;
   text-align: center;
+  font-weight: lighter;
 }
 
 
@@ -74,11 +76,12 @@ ul {
 
 button {
   margin-top: 10px;
-  padding: 10px 30px;
+  padding: 8px 30px;
   background-color: #3882F6;
   color: white;
   border-radius: 8px;
   border: solid 1px #3882F6;
+  font-size: large;
 }
 
 .info {
@@ -142,14 +145,12 @@ button {
 .call-to-action {
   background-color: #3882F6;
   margin: 120px;
-  padding: 30px 100px;
+  padding: 50px 100px;
   border-radius: 10px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: large;
-  
 }
 
 .call-to-action button {
@@ -160,12 +161,14 @@ button {
 .call-to-action .left {
   align-items: center;
   gap: 10px;
+  font-size: 20px;
 }
 
 .left .title {
   font-weight: 700;
-  font-size: large;
+  font-size: 22px;
   margin: 0;
+  letter-spacing: 0.8px;;
 }
 
 .left .text {
